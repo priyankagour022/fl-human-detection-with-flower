@@ -1,0 +1,36 @@
+[2024-05-31 15:32:24,213][flwr][WARNING] - 
+Setting `min_available_clients` lower than `min_fit_clients` or
+`min_evaluate_clients` can cause the server to fail when there are too few clients
+connected to the server. `min_available_clients` must be set to a value larger
+than or equal to the values of `min_fit_clients` and `min_evaluate_clients`.
+
+[2024-05-31 15:32:24,213][flwr][INFO] - Starting Flower simulation, config: ServerConfig(num_rounds=3, round_timeout=None)
+[2024-05-31 15:32:26,849][flwr][INFO] - Flower VCE: Ray initialized with resources: {'CPU': 4.0, 'node:10.6.26.158': 1.0, 'object_store_memory': 1174822502.0, 'memory': 2349645006.0}
+[2024-05-31 15:32:26,850][flwr][INFO] - Initializing global parameters
+[2024-05-31 15:32:26,850][flwr][INFO] - Requesting initial parameters from one random client
+[2024-05-31 15:32:27,494][flwr][INFO] - Received initial parameters from one random client
+[2024-05-31 15:32:27,495][flwr][INFO] - Evaluating initial parameters
+[2024-05-31 15:32:28,595][flwr][INFO] - initial parameters (loss, other metrics): 182.0033962726593, {'accuracy': 0.0582}
+[2024-05-31 15:32:28,595][flwr][INFO] - FL starting
+[2024-05-31 15:32:28,596][flwr][DEBUG] - fit_round 1: strategy sampled 10 clients (out of 10)
+[2024-05-31 15:32:40,575][flwr][DEBUG] - fit_round 1 received 10 results and 0 failures
+[2024-05-31 15:32:40,587][flwr][WARNING] - No fit_metrics_aggregation_fn provided
+[2024-05-31 15:32:41,710][flwr][INFO] - fit progress: (1, 20.02600037306547, {'accuracy': 0.9205}, 13.1143118669861)
+[2024-05-31 15:32:41,710][flwr][INFO] - Sampling failed: number of available clients (10) is less than number of requested clients (25).
+[2024-05-31 15:32:41,710][flwr][INFO] - evaluate_round 1: no clients selected, cancel
+[2024-05-31 15:32:41,710][flwr][DEBUG] - fit_round 2: strategy sampled 10 clients (out of 10)
+[2024-05-31 15:32:52,292][flwr][DEBUG] - fit_round 2 received 10 results and 0 failures
+[2024-05-31 15:32:53,445][flwr][INFO] - fit progress: (2, 9.838751547969878, {'accuracy': 0.9598}, 24.84923601799528)
+[2024-05-31 15:32:53,445][flwr][INFO] - Sampling failed: number of available clients (10) is less than number of requested clients (25).
+[2024-05-31 15:32:53,445][flwr][INFO] - evaluate_round 2: no clients selected, cancel
+[2024-05-31 15:32:53,445][flwr][DEBUG] - fit_round 3: strategy sampled 10 clients (out of 10)
+[2024-05-31 15:33:04,497][flwr][DEBUG] - fit_round 3 received 10 results and 0 failures
+[2024-05-31 15:33:05,617][flwr][INFO] - fit progress: (3, 7.2848245275672525, {'accuracy': 0.9717}, 37.021864367008675)
+[2024-05-31 15:33:05,617][flwr][INFO] - Sampling failed: number of available clients (10) is less than number of requested clients (25).
+[2024-05-31 15:33:05,618][flwr][INFO] - evaluate_round 3: no clients selected, cancel
+[2024-05-31 15:33:05,618][flwr][INFO] - FL finished in 37.022244952997426
+[2024-05-31 15:33:05,618][flwr][INFO] - app_fit: losses_distributed []
+[2024-05-31 15:33:05,618][flwr][INFO] - app_fit: metrics_distributed_fit {}
+[2024-05-31 15:33:05,618][flwr][INFO] - app_fit: metrics_distributed {}
+[2024-05-31 15:33:05,618][flwr][INFO] - app_fit: losses_centralized [(0, 182.0033962726593), (1, 20.02600037306547), (2, 9.838751547969878), (3, 7.2848245275672525)]
+[2024-05-31 15:33:05,618][flwr][INFO] - app_fit: metrics_centralized {'accuracy': [(0, 0.0582), (1, 0.9205), (2, 0.9598), (3, 0.9717)]}

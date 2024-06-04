@@ -1,0 +1,2 @@
+Requirement already satisfied: grpcio in /home/priyanka/miniconda3/envs/flower/lib/python3.8/site-packages (1.43.0)
+Requirement already satisfied: six>=1.5.2 in /home/priyanka/miniconda3/envs/flower/lib/python3.8/site-packages (from grpcio) (1.16.0)
