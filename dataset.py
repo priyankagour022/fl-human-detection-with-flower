@@ -3,7 +3,7 @@ from torch.utils.data import DataLoader, random_split
 from torchvision.transforms import ToTensor, Normalize, Compose, Resize
 from torchvision.datasets import ImageFolder
 
-def get_humanDetection_dataset(data_path: str='FLDataset'):
+def get_humanDetection_dataset(data_path: str='path to your dataset'):
     tr = Compose([
         Resize((128, 128)),  
         ToTensor(),
@@ -13,7 +13,7 @@ def get_humanDetection_dataset(data_path: str='FLDataset'):
     dataset = ImageFolder(data_path, transform=tr)
     return dataset
 
-def prepare_dataset(num_partitions: int, batch_size: int, val_ratio: float=0.1, data_path: str='FLDataset'):
+def prepare_dataset(num_partitions: int, batch_size: int, val_ratio: float=0.1, data_path: str='path to your dataset'):
     dataset = get_humanDetection_dataset(data_path)
 
     # Split dataset into train and test sets 

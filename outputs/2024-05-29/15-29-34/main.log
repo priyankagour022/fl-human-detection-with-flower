@@ -1,8 +1,0 @@
-[2024-05-29 15:29:34,801][flwr][INFO] - Starting Flower simulation, config: ServerConfig(num_rounds=10, round_timeout=None)
-[2024-05-29 15:29:38,380][flwr][INFO] - Flower VCE: Ray initialized with resources: {'node:10.3.2.104': 1.0, 'memory': 2392218011.0, 'object_store_memory': 1196109004.0, 'CPU': 4.0}
-[2024-05-29 15:29:38,380][flwr][INFO] - Initializing global parameters
-[2024-05-29 15:29:38,381][flwr][INFO] - Requesting initial parameters from one random client
-[2024-05-29 15:29:39,022][flwr][INFO] - Received initial parameters from one random client
-[2024-05-29 15:29:39,023][flwr][INFO] - Evaluating initial parameters
-[2024-05-29 15:29:40,109][flwr][INFO] - initial parameters (loss, other metrics): 181.6935911178589, {'accuracy': 0.1059}
-[2024-05-29 15:29:40,109][flwr][INFO] - FL starting
